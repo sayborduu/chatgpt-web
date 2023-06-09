@@ -34,13 +34,18 @@ type MaskStore = MaskState & {
 };
 
 export const DEFAULT_MASK_ID = 1145141919810;
-export const DEFAULT_MASK_AVATAR = "gpt-bot";
+export const DEFAULT_MASK_AVATAR = "ChatGPT";
 export const createEmptyMask = () =>
   ({
     id: DEFAULT_MASK_ID,
     avatar: DEFAULT_MASK_AVATAR,
     name: DEFAULT_TOPIC,
-    context: [],
+    context: [ {
+        role: "system",
+        content:
+          'You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible. Knowledge cutoff: Sep 2021 Current date: 2023',
+        date: "",
+      },],
     syncGlobalConfig: true, // use global config as default
     modelConfig: { ...useAppConfig.getState().modelConfig },
     lang: getLang(),
