@@ -57,15 +57,7 @@ export const ALL_MODELS = [
     available: ENABLE_GPT4,
   },
   {
-    name: "gpt-4-0314",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-32k",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-32k-0314",
+    name: "gpt-4-poe",
     available: ENABLE_GPT4,
   },
   {
@@ -73,28 +65,24 @@ export const ALL_MODELS = [
     available: true,
   },
   {
-    name: "gpt-3.5-turbo-0301",
+    name: "gpt-3.5-turbo-poe",
     available: true,
   },
   {
-    name: "qwen-v1", // 通义千问
-    available: false,
+    name: "sage",
+    available: true,
   },
   {
-    name: "ernie", // 文心一言
-    available: false,
+    name: "claude-instant",
+    available: true,
   },
   {
-    name: "spark", // 讯飞星火
-    available: false,
+    name: "claude+",
+    available: true,
   },
   {
-    name: "llama", // llama
-    available: false,
-  },
-  {
-    name: "chatglm", // chatglm-6b
-    available: false,
+    name: "claude-instant-100k",
+    available: true,
   },
 ] as const;
 
