@@ -15,7 +15,7 @@ declare global {
 }
 
 const ACCESS_CODES = (function getAccessCodes(): Set<string> {
-  const code = process.env.CODE;
+  const code = "privgpt";
 
   try {
     const codes = (code?.split(",") ?? [])
