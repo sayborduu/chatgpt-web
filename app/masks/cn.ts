@@ -220,7 +220,7 @@ modelConfig: {
     builtin: true,
   },
 {
-    avatar: "1f47e",
+    avatar: "1f916",
     name: "GPT-4",
     context: [],
     modelConfig: {
@@ -236,7 +236,7 @@ modelConfig: {
     builtin: true,
   },
 {
-    avatar: "1f47e",
+    avatar: "1f916",
     name: "claude-instant-100k",
     context: [],
     modelConfig: {
