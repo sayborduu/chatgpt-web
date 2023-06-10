@@ -22,7 +22,7 @@ export const EN_MASKS: BuiltinMask[] = [
     name: "claude-instant-100k",
     context: [],
     modelConfig: {
-      model: "claude.instant-100k",
+      model: "claude-instant-100k",
       temperature: 0.5,
       max_tokens: 100000,
       presence_penalty: 0,
