@@ -28,7 +28,7 @@ import { ModelConfigList } from "./model-config";
 import { FileName, Path } from "../constant";
 import { BUILTIN_MASK_STORE } from "../masks";
 
-import ClaudeAvatar from '../icons/claude.svg';
+import ClaudeAvatar from './claude';
 
 export function MaskAvatar(props: { mask: Mask }) {
   const excludedAvatars = ["ChatGPT", "claude"];
