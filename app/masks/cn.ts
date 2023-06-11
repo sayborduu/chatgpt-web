@@ -253,7 +253,7 @@ modelConfig: {
   },
   
   {
-    avatar: "1F30D",
+    avatar: "1f30d",
     name: "InternetGPT",
     context: [
       {
