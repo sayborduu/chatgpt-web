@@ -251,4 +251,27 @@ modelConfig: {
     lang: "es",
     builtin: true,
   },
+  
+  {
+    avatar: "1F30D",
+    name: "InternetGPT",
+    context: [
+      {
+        role: "assistant",
+        content: "[How to get Search Engine ID and API-Key - Google Programmable Search](https://www.notion.so/How-to-get-Search-Engine-ID-and-API-Key-on-Programmable-Search-Engine-by-Google-0adc83cde68b49af825366baa1347734?pvs=4)",
+        date: "",
+      },
+],
+    modelConfig: {
+      model: "gpt-4-poe",
+      temperature: 0.7,
+      max_tokens: 80000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "en",
+    builtin: true,
+  },
 ];
