@@ -220,7 +220,7 @@ modelConfig: {
     builtin: true,
   },
 {
-    avatar: "1f916",
+    avatar: "ChatGPT",
     name: "GPT-4",
     context: [],
     modelConfig: {
