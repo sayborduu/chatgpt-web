@@ -85,6 +85,16 @@ export async function requestOpenai(req: NextRequest) {
       statusText: res.statusText,
       headers: newHeaders,
     });
+  } catch (e) {
+    return NextResponse.json(
+          {
+            error: true,
+            message: "can't call api, maintenance?",
+          },
+          {
+            status: 403,
+          },
+        );
   } finally {
     clearTimeout(timeoutId);
   }
