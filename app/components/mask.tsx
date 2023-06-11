@@ -34,7 +34,7 @@ export function MaskAvatar(props: { mask: Mask }) {
   const excludedAvatars = ["ChatGPT", "claude"];
 
   return props.mask.avatar === "claude" ? (
-  <ClaudeAvatar />
+  <Avatar model={ClaudeAvatar} />
 ) : excludedAvatars.includes(props.mask.avatar) ? (
   <Avatar model={props.mask.modelConfig.model} />
 ) : (
