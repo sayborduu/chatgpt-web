@@ -236,7 +236,7 @@ modelConfig: {
     builtin: true,
   },
 {
-    avatar: "1f916",
+    avatar: "claude",
     name: "claude-instant-100k",
     context: [],
     modelConfig: {
