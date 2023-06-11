@@ -28,14 +28,18 @@ import { ModelConfigList } from "./model-config";
 import { FileName, Path } from "../constant";
 import { BUILTIN_MASK_STORE } from "../masks";
 
+import ClaudeAvatar from '../icons/claude.svg';
+
 export function MaskAvatar(props: { mask: Mask }) {
   const excludedAvatars = ["ChatGPT", "claude"];
 
-  return excludedAvatars.includes(props.mask.avatar) ? (
-    <Avatar model={props.mask.modelConfig.model} />
-  ) : (
-    <Avatar avatar={props.mask.avatar} />
-  );
+  return props.mask.avatar === "claude" ? (
+  <ClaudeAvatar />
+) : excludedAvatars.includes(props.mask.avatar) ? (
+  <Avatar model={props.mask.modelConfig.model} />
+) : (
+  <Avatar avatar={props.mask.avatar} />
+);
 
 }
 
