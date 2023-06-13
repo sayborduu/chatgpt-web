@@ -84,6 +84,10 @@ export const ALL_MODELS = [
     name: "claude-instant-100k",
     available: true,
   },
+  {
+    name: "bard",
+    available: true,
+  },
 ] as const;
 
 export type ModelType = (typeof ALL_MODELS)[number]["name"];
