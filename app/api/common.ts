@@ -13,7 +13,7 @@ const PROTOCOL = process.env.PROTOCOL ?? DEFAULT_PROTOCOL;
 const BASE_URL = process.env.BASE_URL ?? OPENAI_URL;
 const DISABLE_GPT4 = !!process.env.DISABLE_GPT4;
 
-export async function requestOpenai(req: NextRequest) {
+export async function requestOpenai(req: NextRequest, res: NextResponse) {
   await limiter(req, res);
 
   const controller = new AbortController();
