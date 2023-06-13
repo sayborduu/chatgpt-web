@@ -9,6 +9,7 @@ const BardAvatar = () => {
       <Image
         src={bard}
         className="uav-bard"
+        alt=" "
       />
     </div>
   );
