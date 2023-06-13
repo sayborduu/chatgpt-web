@@ -1,12 +1,15 @@
 import React from 'react';
 import "./bardstyle.css";
+import bardIcon from "../icons/bard.svg";
 
 const BardAvatar = () => {
   return (
     <div className="user-avatar">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Google_Bard_logo.svg" className="user-avatar uav-bard" />
+      <img
+        src={bardIcon} 
+        className="user-avatar-img"
+      />
     </div>
   );
 };
-
 export default BardAvatar;
