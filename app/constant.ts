@@ -1,5 +1,5 @@
 export const OWNER = "sayborduu";
-export const REPO = "chatgpt-web";
+export const REPO = "privgpt";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
