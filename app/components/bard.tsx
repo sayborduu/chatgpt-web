@@ -7,7 +7,7 @@ const BardAvatar = () => {
     <div className="user-avatar">
       <img
         src={bardIcon} 
-        className="user-avatar-img"
+        className="uav-bard"
       />
     </div>
   );
