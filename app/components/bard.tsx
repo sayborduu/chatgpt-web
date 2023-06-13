@@ -1,15 +1,14 @@
 import React from 'react';
 import "./bardstyle.css";
-import { ReactComponent as bardIcon } from "../icons/bard.svg";
+import bard from "../icons/bard.png";
 
 const BardAvatar = () => {
     const svgString = new XMLSerializer().serializeToString(bardIcon);
   return (
     <div className="user-avatar">
       <img
-        src={`data:image/svg+xml;utf8,${encodeURIComponent(svgString)}`}
+        src={bard}
         className="uav-bard"
-        dangerouslySetInnerHTML={{ __html: svgString }}
       />
     </div>
   );
