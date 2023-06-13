@@ -274,4 +274,21 @@ modelConfig: {
     lang: "en",
     builtin: true,
   },
+
+  {
+    avatar: "google",
+    name: "Bard",
+    context: [],
+    modelConfig: {
+      model: "bard",
+      temperature: 0.5,
+      max_tokens: 10000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 999,
+    },
+    lang: "en",
+    builtin: true,
+  },
 ];
