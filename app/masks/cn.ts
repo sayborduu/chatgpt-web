@@ -276,7 +276,7 @@ modelConfig: {
   },
 
   {
-    avatar: "google",
+    avatar: "bard",
     name: "Bard",
     context: [],
     modelConfig: {
