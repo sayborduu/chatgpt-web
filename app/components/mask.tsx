@@ -29,17 +29,21 @@ import { FileName, Path } from "../constant";
 import { BUILTIN_MASK_STORE } from "../masks";
 
 import ClaudeAvatar from './claude';
+import BardAvatar from './bard';
 
 export function MaskAvatar(props: { mask: Mask }) {
-  const excludedAvatars = ["ChatGPT", "claude"];
+  const excludedAvatars = ["ChatGPT", "claude", "bard"];
 
   return props.mask.avatar === "claude" ? (
   <ClaudeAvatar />
+) : props.mask.avatar === "bard" ? (
+  <BardAvatar />
 ) : excludedAvatars.includes(props.mask.avatar) ? (
   <Avatar model={props.mask.modelConfig.model} />
 ) : (
   <Avatar avatar={props.mask.avatar} />
 );
+
 
 }
 
