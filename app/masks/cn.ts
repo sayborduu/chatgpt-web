@@ -280,7 +280,7 @@ modelConfig: {
     name: "Bard",
     context: [],
     modelConfig: {
-      model: "bard",
+      model: "test-bard",
       temperature: 0.5,
       max_tokens: 10000,
       presence_penalty: 0,
