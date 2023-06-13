@@ -1,11 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-const rateLimit = require("express-rate-limit");
-
-const limiter = rateLimit({
-  windowMs: 1 * 60 * 1000, // 1 minutes
-  max: 5, 
-  message: "Too many requests, please try again later. 40 requests per minute.",
-});
 
 export const OPENAI_URL = "chimeragpt.adventblocks.cc";
 const DEFAULT_PROTOCOL = "https";
@@ -13,9 +6,7 @@ const PROTOCOL = process.env.PROTOCOL ?? DEFAULT_PROTOCOL;
 const BASE_URL = process.env.BASE_URL ?? OPENAI_URL;
 const DISABLE_GPT4 = !!process.env.DISABLE_GPT4;
 
-export async function requestOpenai(req: NextRequest, res: NextResponse) {
-  await limiter(req, res);
-
+export async function requestOpenai(req: NextRequest) {
   const controller = new AbortController();
   const authValue = req.headers.get("Authorization") ?? "";
   const openaiPath = `${req.nextUrl.pathname}${req.nextUrl.search}`.replaceAll(
