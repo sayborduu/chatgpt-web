@@ -26,7 +26,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { useMobileScreen } from "../utils";
 import dynamic from "next/dynamic";
-import { showToast } from "./ui-lib";
+import { showToast, showModal } from "./ui-lib";
 
 const ChatList = dynamic(async () => (await import("./chat-list")).ChatList, {
   loading: () => null,
@@ -140,7 +140,23 @@ export function SideBar(props: { className?: string }) {
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}
           className={styles["sidebar-bar-button"]}
-          onClick={() => showToast(Locale.WIP)}
+          onClick={() =>  showModal({
+            title: 'Coming Soon?',
+            children: <p>Work in progress</p>,
+            actions: [
+              <IconButton
+                icon={<MaskIcon />}
+                text={"Close"}
+                className={styles["sidebar-bar-button"]}
+                onClick={() => console.log}
+                shadow
+              />,
+            ],
+            onClose: () => {
+              console.log('Modal closed');
+            },
+          });
+          }
           shadow
         />
       </div>
