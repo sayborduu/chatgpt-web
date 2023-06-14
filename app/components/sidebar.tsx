@@ -140,23 +140,7 @@ export function SideBar(props: { className?: string }) {
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}
           className={styles["sidebar-bar-button"]}
-          onClick={() =>  showModal({
-            title: 'Coming Soon?',
-            children: <p>Work in progress</p>,
-            actions: [
-              <IconButton
-                icon={<PluginIcon />}
-                text="Close"
-                className={styles["sidebar-bar-button"]}
-                onClick={() => console.log}
-                shadow
-              />,
-            ],
-            onClose: () => {
-              console.log('Modal closed');
-            },
-          });
-          }
+          onClick={() => showToast(Locale.WIP)}
           shadow
         />
       </div>
