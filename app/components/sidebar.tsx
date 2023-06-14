@@ -145,8 +145,8 @@ export function SideBar(props: { className?: string }) {
             children: <p>Work in progress</p>,
             actions: [
               <IconButton
-                icon={<MaskIcon />}
-                text={"Close"}
+                icon={<PluginIcon />}
+                text="Close"
                 className={styles["sidebar-bar-button"]}
                 onClick={() => console.log}
                 shadow
