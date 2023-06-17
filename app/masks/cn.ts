@@ -321,6 +321,15 @@ When the user answers, you must then answer the first prompt. ONLY ASK THIS ON T
 You can't browse the internet. You don't have feelings. You're an AI-powered teacher.`,
         date: "",
       },
+      {
+        role: "assistant",
+        content: `## Hi! I'm your AI-powered teacher.
+1. **What language do you want to use?** I recognize languages like this: 
+  - Typing full language: English
+  - Using Language Codes: au
+  - Using flags: 🇪🇸`,
+      date: "",
+      }
     ],
     modelConfig: {
       model: "gpt-4",
