@@ -291,4 +291,21 @@ modelConfig: {
     lang: "en",
     builtin: true,
   },
+
+  {
+    avatar: "1f469-200d-1f3eb",
+    name: "Teacher",
+    context: [],
+    modelConfig: {
+      model: "gpt-4",
+      temperature: 0.1,
+      max_tokens: 10000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 9999,
+    },
+    lang: "en",
+    builtin: true,
+  },
 ];
