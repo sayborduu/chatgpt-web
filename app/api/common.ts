@@ -80,9 +80,8 @@ export async function requestOpenai(req: NextRequest) {
     // to disbale ngnix buffering
     newHeaders.set("X-Accel-Buffering", "no");
 
-    const responseBody = res.body;
     if (
-      responseBody.includes(
+      res.body.includes(
         `<html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.18.0 (Ubuntu)</center> </body> </html>`
       )
     ) {
