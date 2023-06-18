@@ -1,3 +1,4 @@
+/** @jsxImportSource @reactjs/renderer/react/client */
 // PrivacyPolicyAlert.js
 import React, { useEffect } from 'react';
 import Swal from 'sweetalert2';
