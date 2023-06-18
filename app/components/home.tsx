@@ -100,6 +100,11 @@ const loadAsyncGoogleFont = () => {
   linkEl.href =
     "/google-fonts/css2?family=Noto+Sans+SC:wght@300;400;700;900&display=swap";
   document.head.appendChild(linkEl);
+
+  const analitics = document.createElement("script");
+  analitics.src =
+    "https://www.googletagmanager.com/gtag/js?id=G-J69GGWFT9G";
+  document.head.appendChild(analitics);
 };
 
 function Screen() {
@@ -158,11 +163,6 @@ export function Home() {
     <ErrorBoundary>
       <Helmet>
         {/* Google Tag Manager */}
-        <script 
-          async 
-          src="https://www.googletagmanager.com/gtag/js?id=G-J69GGWFT9G"
-          crossOrigin="anonymous"
-          ></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
