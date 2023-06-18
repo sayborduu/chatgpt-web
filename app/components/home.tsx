@@ -158,7 +158,11 @@ export function Home() {
     <ErrorBoundary>
       <Helmet>
         {/* Google Tag Manager */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J69GGWFT9G"></script>
+        <script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=G-J69GGWFT9G"
+          crossOrigin="anonymous"
+          ></script>
         <script>
           {`
             window.dataLayer = window.dataLayer || [];
@@ -174,13 +178,13 @@ export function Home() {
         <script
           src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"
           integrity="sha384-7GggyGyZl+KzXrDylFI5Fz7RV6zY+Ze+ez2LW9Dfp5/3d5F2zg4J3CFrSVf6OTW/"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
           integrity="sha384-7GggyGyZl+KzXrDylFI5Fz7RV6zY+Ze+ez2LW9Dfp5/3d5F2zg4J3CFrSVf6OTW/"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <script>
           {`
