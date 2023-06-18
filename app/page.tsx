@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 
 import { Home } from "./components/home";
+import PrivacyPolicyAlert from './PrivacyPolicyAlert';
 
 import { getServerSideConfig } from "./config/server";
 
@@ -11,6 +12,7 @@ export default async function App() {
     <>
       <Home />
       {serverConfig?.isVercel && <Analytics />}
+      <PrivacyPolicyAlert />
     </>
   );
 }
