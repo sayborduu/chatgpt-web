@@ -38,7 +38,8 @@
     "use-debounce": "^9.0.3",
     "zustand": "^4.3.6",
     "sweetalert2": "^11.7.12",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "@types/react-helmet": "^6.1.6"
   },
   "devDependencies": {
     "@types/node": "^18.14.6",
