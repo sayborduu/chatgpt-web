@@ -4,6 +4,8 @@ require("../polyfill");
 
 import { useState, useEffect } from "react";
 
+import PrivacyPolicyAlert from './PrivacyPolicyAlert.client';
+
 import styles from "./home.module.scss";
 
 import BotIcon from "../icons/bot.svg";
@@ -155,6 +157,7 @@ export function Home() {
     <ErrorBoundary>
       <Router>
         <Screen />
+        <PrivacyPolicyAlert />
       </Router>
     </ErrorBoundary>
   );
