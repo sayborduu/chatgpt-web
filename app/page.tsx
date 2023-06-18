@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 
 import { Home } from "./components/home";
-import PrivacyPolicyAlert from './PrivacyPolicyAlert';
+import PrivacyPolicyAlert from './components/PrivacyPolicyAlert';
 
 import { getServerSideConfig } from "./config/server";
 
