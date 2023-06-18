@@ -15,8 +15,6 @@ import dynamic from "next/dynamic";
 import { Path, SlotID } from "../constant";
 import { ErrorBoundary } from "./error";
 
-import PrivacyPolicy from './privacy';
-
 import {
   HashRouter as Router,
   Routes,
