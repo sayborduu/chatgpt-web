@@ -30,9 +30,9 @@ export const DEFAULT_CONFIG = {
   dontShowMaskSplashScreen: false, // dont show splash screen when create chat
 
   modelConfig: {
-    model: "gpt-3.5-turbo" as ModelType,
+    model: "gpt-3.5-turbo-16k" as ModelType,
     temperature: 0.5,
-    max_tokens: 2000,
+    max_tokens: 16000,
     presence_penalty: 0,
     sendMemory: true,
     historyMessageCount: 4,
@@ -53,41 +53,49 @@ const ENABLE_GPT4 = true;
 
 export const ALL_MODELS = [
   {
-    name: "gpt-4",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-poe",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-3.5-turbo",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo-poe",
-    available: true,
-  },
-  {
-    name: "sage",
-    available: true,
-  },
-  {
-    name: "claude-instant",
-    available: true,
-  },
-  {
-    name: "claude+",
-    available: true,
-  },
-  {
-    name: "claude-instant-100k",
-    available: true,
-  },
-  {
-    name: "bard",
-    available: true,
-  },
+        name: "gpt-4",
+        available: true
+    },
+    {
+        name: "gpt-3.5-turbo",
+        available: true
+    },
+    {
+        name: "gpt-3.5-turbo-0613",
+        available: true
+    },
+    {
+        name: "gpt-3.5-turbo-16k",
+        available: true
+    },
+    {
+        name: "gpt-4-poe",
+        available: true
+    },
+    {
+        name: "gpt-3.5-turbo-poe",
+        available: true
+    },
+    {
+        name: "sage",
+        available: true
+    },
+    {
+        name: "claude-instant",
+        available: true
+    },
+    {
+        name: "claude+",
+        available: true
+    },
+    {
+        name: "claude-instant-100k",
+        available: true
+    },
+    {
+        name: "bard",
+        available: true
+    }
 ] as const;
 
 export type ModelType = (typeof ALL_MODELS)[number]["name"];
