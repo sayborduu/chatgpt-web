@@ -1,3 +1,4 @@
+/** @jsxImportSource @reactjs/renderer/react/client */
 import { Analytics } from "@vercel/analytics/react";
 
 import { Home } from "./components/home";
