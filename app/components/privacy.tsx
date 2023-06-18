@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useClient } from 'react-components';
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -57,4 +58,10 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+const PrivacyPolicyClient = () => {
+  useClient(); // Mark the component as a client component
+
+  return <PrivacyPolicy />;
+};
+
+export default PrivacyPolicyClient;
