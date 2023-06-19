@@ -61,9 +61,9 @@ async function fetchEN() {
 }
 
 async function main() {
-  Promise.all([fetchCN(), fetchEN()])
-    .then(([cn, en]) => {
-      fs.writeFile(FILE, JSON.stringify({ cn, en }));
+  Promise.all([fetchEN()])
+    .then(([en]) => {
+      fs.writeFile(FILE, JSON.stringify({ en }));
     })
     .catch((e) => {
       console.error("[Fetch] failed to fetch prompts");
