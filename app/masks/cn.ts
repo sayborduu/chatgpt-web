@@ -357,7 +357,7 @@ You can't browse the internet. You don't have feelings. You're an AI-powered tea
     ],
     modelConfig: {
       model: "gpt-4",
-      temperature: 1.5,
+      temperature: 1,
       max_tokens: 10000,
       presence_penalty: 0,
       sendMemory: true,
