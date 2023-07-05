@@ -96,10 +96,7 @@ export async function requestOpenai(req: NextRequest) {
       return NextResponse.json(
           {
             error: true,
-            message: "can't call api, maintenance?",
-          },
-          {
-            message: "try again in some seconds",
+            message: "can't call api, maintenance? | try again in some seconds",
           },
           {
             status: 403,
@@ -116,10 +113,7 @@ export async function requestOpenai(req: NextRequest) {
     return NextResponse.json(
           {
             error: true,
-            message: "can't call api, maintenance?",
-          },
-          {
-            message: "try again in some seconds",
+            message: "can't call api, maintenance? | try again in some seconds",
           },
           {
             status: 403,
