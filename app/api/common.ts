@@ -92,6 +92,19 @@ export async function requestOpenai(req: NextRequest) {
       );
     }
 
+    if (res.body == "<html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.18.0 (Ubuntu)</center> </body> </html>") return NextResponse.json(
+          {
+            error: true,
+            message: "can't call api, maintenance?",
+          },
+          {
+            message: "try again in some seconds",
+          },
+          {
+            status: 403,
+          },
+        );
+
     return new Response(res.body, {
       status: res.status,
       statusText: res.statusText,
@@ -102,6 +115,9 @@ export async function requestOpenai(req: NextRequest) {
           {
             error: true,
             message: "can't call api, maintenance?",
+          },
+          {
+            message: "try again in some seconds",
           },
           {
             status: 403,
