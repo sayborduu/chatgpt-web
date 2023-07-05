@@ -92,7 +92,7 @@ export async function requestOpenai(req: NextRequest) {
       );
     }
 
-    if (res.body && res.body == "<html> <head><title>502 Bad Gateway</title></head> <body> <center><h1>502 Bad Gateway</h1></center> <hr><center>nginx/1.18.0 (Ubuntu)</center> </body> </html>") {
+    if (res.status == 403) {
       return NextResponse.json(
           {
             error: true,
